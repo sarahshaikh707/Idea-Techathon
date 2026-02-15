@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Idea-Techathon 2026</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f2027;
+color:white;
+overflow-x:hidden;
+}
+
+/* ===== PARTICLE BACKGROUND ===== */
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+/* ===== NAVBAR ===== */
+nav{
+position:fixed;
+width:100%;
+padding:15px 10%;
+display:flex;
+justify-content:space-between;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav a{
+color:#00f7ff;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+/* ===== HERO ===== */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 10%;
+}
+
+.hero h1{
+font-size:48px;
+color:#00f7ff;
+text-shadow:0 0 25px #00f7ff;
+}
+
+.typing{
+font-size:22px;
+color:#ffd700;
+margin-top:15px;
+height:30px;
+}
+
+/* ===== BUTTON ===== */
+.button{
+margin-top:25px;
+padding:15px 40px;
+background:#00f7ff;
+color:black;
+font-weight:bold;
+border-radius:50px;
+text-decoration:none;
+box-shadow:0 0 25px #00f7ff;
+transition:0.3s;
+}
+
+.button:hover{
+background:#ffd700;
+box-shadow:0 0 35px #ffd700;
+}
+
+/* ===== SECTIONS ===== */
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+margin:20px auto;
+border-radius:20px;
+box-shadow:0 0 25px rgba(0,247,255,0.3);
+max-width:700px;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 35px #00f7ff;
+}
+
+h2{
+color:#00f7ff;
+margin-bottom:20px;
+}
+
+/* ===== COUNTDOWN ===== */
+#countdown{
+font-size:28px;
+color:#ffd700;
+margin-top:20px;
+}
+
+
+/* ===== FOOTER ===== */
+footer{
+padding:20px;
+background:rgba(0,0,0,0.6);
+text-align:center;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:28px;}
+}
+
+.register-card{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+padding:40px 25px;
+}
+
+.register-text{
+font-size:18px;
+text-align:center;
+max-width:500px;
+line-height:1.6;
+}
+
+.register-btn-wrapper{
+margin-top:10px;
+}
+
+.register-btn{
+display:inline-block;
+padding:18px 45px;
+font-size:16px;
+}
+
+.register-note{
+font-size:14px;
+color:#aaa;
+margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<nav>
+<div><strong>IDEA-TECHATHON 2026</strong></div>
+<div>
+<a href="#about">About</a>
+<a href="#domains">Domains</a>
+<a href="#prizes">Prizes</a>
+<a href="#register">Register</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1>State Level Idea-Techathon & Campus Drive 2026</h1>
+<p style="margin-top:15px; font-size:18px; color:#ffffff;">
+Organized by <strong>Shri Chhatrapati Shivaji Maharaj College of Engineering, Nepti, Ahilyanagar</strong>
+</p>
+
+<p style="font-size:16px; color:#00f7ff; margin-top:5px;">
+In Association with <strong>Department of Computer Engineering</strong> & <strong>DSPL Technologies Pvt. Ltd.</strong>
+</p>
+
+<div class="typing" id="typing"></div>
+<a href="#register" class="button">Register Now</a>
+<div id="countdown"></div>
+</div>
+
+<section id="about">
+<h2>📅 Event Details</h2>
+<div class="card">
+<p>Idea Techathon: 25 Feb 2026</p>
+<p>Placement Drive: 26 Feb 2026</p>
+<p>Venue: Savitribai Phule Seminar Hall</p>
+<p>Time: 10:00 AM</p>
+<p>Team Size: 1–4 Members</p>
+</div>
+</section>
+
+<section id="domains">
+<h2>💡 Tech Domains</h2>
+<div class="card">
+Healthcare | Agriculture | Banking | E-commerce | Education | Automobile | Govt & Public Sector | Business Tech | Environment
+</div>
+</section>
+
+<section id="prizes">
+<h2>🏆 Prizes & Opportunities</h2>
+<div class="card">
+🥇 ₹2000 <br>
+🥈 ₹1000 <br>
+🥉 ₹500 <br><br>
+Implementation Roles: ₹4–5 LPA <br>
+Business Development: Up to ₹6 LPA <br>
+Internship Stipend: ₹10k–15k
+</div>
+</section>
+
+<section id="register">
+<h2>📲 Register Now</h2>
+
+<div class="card register-card">
+
+<p class="register-text">
+Click below to scan the QR & complete your registration.
+</p>
+
+<div class="register-btn-wrapper">
+<a href="https://q.me-qr.com/l00vbkz0"
+   target="_blank"
+   class="button register-btn">
+   🚀 Register for Idea-Techathon 2026
+</a>
+</div>
+
+<p class="register-note">
+Secure QR Registration Link
+</p>
+
+</div>
+</section>
+
+
+
+<section id="organizers">
+<h2>🏛 Organized By</h2>
+<div class="card">
+<p><strong>Ahmednagar Jilha Maratha Vidya Prasarak Samaj's</strong></p>
+<p><strong>Shri Chhatrapati Shivaji Maharaj College of Engineering</strong></p>
+<p>Nepti, Ahilyanagar</p>
+<br>
+<p style="color:#00f7ff;">
+In Association with
+</p>
+<p>Department of Computer Engineering</p>
+<p>DSPL Technologies Pvt. Ltd.</p>
+</div>
+</section>
+
+<footer>
+<p>Eligibility: Diploma | Degree | All Branches | All Years | Alumni</p>
+<p>Coordinator: Prof. K. A. Anhad | 8605320876</p>
+<p>Innovate. Build. Get Placed.</p>
+<p style="margin-top:10px; font-size:14px; color:#00f7ff;">
+Created by <strong>Sarah</strong>
+</p>
+
+</footer>
+
+<!-- PARTICLES JS -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+particlesJS.load('particles-js','https://cdn.jsdelivr.net/particles.js/2.0.0/particles.json');
+</script>
+
+<!-- TYPING EFFECT -->
+<script>
+var text = "Innovate. Compete. Get Placed.";
+var i = 0;
+function typing(){
+if(i < text.length){
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(typing,70);
+}
+}
+typing();
+</script>
+
+<!-- COUNTDOWN -->
+<script>
+var eventDate = new Date("Feb 25, 2026 10:00:00").getTime();
+setInterval(function(){
+var now = new Date().getTime();
+var distance = eventDate - now;
+var days = Math.floor(distance/(1000*60*60*24));
+var hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+var minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+var seconds = Math.floor((distance%(1000*60))/1000);
+document.getElementById("countdown").innerHTML =
+"⏳ Starts In: "+days+"d "+hours+"h "+minutes+"m "+seconds+"s";
+},1000);
+</script>
+
+</body>
+</html>
