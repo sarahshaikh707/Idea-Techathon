@@ -172,6 +172,24 @@ font-size:14px;
 color:#aaa;
 margin-top:10px;
 }
+.highlight-box{
+background: linear-gradient(90deg,#00f7ff,#ffd700);
+color:black;
+font-weight:bold;
+padding:12px 25px;
+border-radius:40px;
+box-shadow:0 0 20px #00f7ff;
+animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{
+box-shadow:0 0 10px #00f7ff;
+}
+to{
+box-shadow:0 0 30px #ffd700;
+}
+}
 
 </style>
 </head>
@@ -241,16 +259,32 @@ Internship Stipend: ₹10k–15k
 <div class="card register-card">
 
 <p class="register-text">
-Click below & complete your registration.
+Click below to complete your registration.
 </p>
 
+<div class="highlight-box">
+🔥 FREE Registration  
+</div>
+
+<div class="highlight-box">
+🎓 Certificate for All Participants  
+</div>
+
 <div class="register-btn-wrapper">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdPEgak8U-ADNLc6uNv_gLnn76yu33eq0YXcS42JetNw3qQVw/viewform"
+<a href="https://q.me-qr.com/l00vbkz0"
    target="_blank"
    class="button register-btn">
    🚀 Register for Idea-Techathon 2026
 </a>
 </div>
+
+<p class="register-note">
+Secure QR Registration Link
+</p>
+
+</div>
+</section>
+
 
 
 </div>
@@ -320,6 +354,7 @@ document.getElementById("countdown").innerHTML =
 
 </body>
 </html>
+
 
 
 
